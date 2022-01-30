@@ -1,8 +1,12 @@
-.main-container-frontsection{
+.main-container-frontsection-bigscreen{
     width: 100vw;
     max-width: 100%;
     height: 100vh;
     background-color: black;
+}
+
+.main-container-frontsection-smallscreen{
+    display: none;
 }
 
 .design-element-1{
@@ -63,5 +67,50 @@
         margin-left: 50px;
         font-size: 25px;
     }
+
+}
+
+@media(max-width:850px){
+    .main-container-frontsection-bigscreen{
+        display: none;
+    }
+
+    .main-container-frontsection-smallscreen{
+        width: 100vw;
+        max-width: 100%;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-front-section-smallscreen{    
+        
+        img{
+            width: 100vw;
+            height: 65vh;
+            object-fit: cover;
+        }
+    
+    }
+
+    .text-section-smallscreen{
+        color: white;
+        text-align: center;
+        
+        h1{
+         
+            font-size: 40px;
+            color: white;
+        }
+    
+        h4{
+           
+            font-size: 25px;
+            color: white;
+        }
+    }
+
 
 }

@@ -7,6 +7,11 @@
     align-items: center;
 }
 
+.mystorytext-section{
+    display: flex; 
+    justify-content: center;
+}
+
 .icon-background{
     width: 80px;
     height: 80px;
@@ -56,3 +61,79 @@
         object-fit: contain;
     }
 }
+
+@media(max-width: 1100px){
+   .mystory-element{
+        width: 220px;
+        margin: 10px;
+       
+    
+        h1{
+            margin-top: 30px;
+        }
+    }
+}
+
+@media(max-width: 1100px){
+    .mystory-element{
+         width: 220px;
+         margin: 10px;
+        
+     
+         h1{
+             margin-top: 30px;
+         }
+     }
+ }
+ @media(max-width: 1000px){
+    .mystory-element{
+         width: 200px;
+         margin: 5px;
+        
+     
+         h1{
+             margin-top: 30px;
+         }
+     }
+ }
+
+ @media(max-width: 800px){
+
+    .photo-section{
+      
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+
+    
+        img{
+            margin-bottom: 20px;
+            margin-right: 0px;
+            border-radius: 100%;
+            width: 250px;
+            object-fit: contain;
+        }
+    }
+ 
+ }
+
+ @media(max-width: 850px){
+    .mystory-element{
+         width: 50vw;
+         margin: 15px;
+        
+     
+         h1{
+             margin-top: 20px;
+         }
+     }
+
+     .mystorytext-section{
+        display: flex; 
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+ 
+ 

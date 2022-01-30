@@ -63,3 +63,32 @@
         color: white;
     }
 }
+
+@media(max-width: 1100px
+){
+.letsworktogether-section{
+    display: none;
+}
+
+}
+
+
+.contact-section-input{
+
+
+    input{
+        
+        width: 90vw;
+
+
+       
+    }
+
+    textarea{
+      
+        width: 90vw;
+    
+
+    }
+
+}

@@ -16,6 +16,14 @@
     
 }
 
+.myprojects-container{
+
+    display: flex; justify-content: center; 
+    background-color: #5221E6; 
+    padding: 10px !important; 
+    margin-bottom: 30px;
+}
+
 
 
 
@@ -30,7 +38,7 @@
     position: relative; /*relevant for project-overlay*/
 
     img{
-        object-fit: contain;
+        object-fit: cover;
         width: 19vw;
         border-radius: 10px;
     }
@@ -87,3 +95,105 @@
         margin-bottom: 50px !important;
     }
   }
+
+@media(max-width: 1600px){
+    .myprojects-element{
+        img{
+           width: 23vw;
+            object-fit: cover;
+        }
+    }
+
+    .myprojects-column{
+
+        width: 25vw !important;
+        
+}
+}
+
+
+@media(max-width: 1200px){
+    .myprojects-element{
+        img{
+           width: 30vw;
+        }
+    }
+
+    .myprojects-column{
+        width: 33vw !important;
+        
+}
+}
+
+@media(max-width: 1300px){
+    .myprojects-element{
+        img{
+           width: 27vw;
+        }
+    }
+
+    .myprojects-column{
+        width: 30vw !important;
+        
+}
+}
+
+@media(max-width: 1100px){
+    .myprojects-element{
+        img{
+           width: 33vw;
+        }
+    }
+
+    .myprojects-column{
+        width: 37vw !important;
+        
+}
+}
+
+
+@media(max-width: 750px){
+    .myprojects-element{
+        img{
+           width: 40vw;
+        }
+    }
+
+    .myprojects-column{
+        width: 45vw !important;
+        
+}
+}
+
+@media(max-width: 650px){
+    .myprojects-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .myprojects-element{
+        img{
+           width: 65vw;
+        }
+    }
+
+    .myprojects-column{
+        width: 70vw !important;
+        
+}
+}
+
+
+@media(max-width: 550px){
+
+    .myprojects-element{
+        img{
+           width: 75vw;
+        }
+    }
+
+    .myprojects-column{
+        width: 80vw !important;
+        
+}
+}
