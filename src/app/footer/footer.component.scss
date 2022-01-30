@@ -1,0 +1,27 @@
+.footer-logo{
+    display: flex; 
+    justify-content: space-around; 
+    border-left: 5px solid #5221e6; 
+    width: 30vw;
+    align-items: center;
+
+    img{
+        cursor: pointer;
+        object-fit: contain;
+        width: 80px;
+    }
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    justify-content: center;
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+
+}

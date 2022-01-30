@@ -1,0 +1,54 @@
+.myskills-container{
+    width: 100vw;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.skills-table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-element{
+    width: 70px !important;
+    height: 50px;
+    object-fit: contain;
+    margin-top: 5px;
+  
+}
+
+.skills-row{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.skills-element{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    align-items: center;
+    width: 150px;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10%;
+    cursor: pointer;
+    
+
+    h3{
+        
+        color: schwarz !important;
+
+    }
+}

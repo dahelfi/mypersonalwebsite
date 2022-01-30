@@ -1,0 +1,58 @@
+.mystory-section{
+    width: 100vw;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-background{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5221e6;
+    border-radius: 100%;
+    
+
+    img{
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+        
+    }
+}
+
+.mystory-element{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    width: 250px;
+    margin: 1vw;
+    text-align: center;
+
+    h1{
+        margin-top: 50px;
+    }
+}
+
+.photo-section{
+    width: 80vw;
+    display: flex; 
+    justify-content: center; 
+    border-bottom: 2px solid #5221e6;
+    color: white;
+    margin: 50px;
+
+    img{
+        margin-bottom: 50px;
+        margin-right: 50px;
+        border-radius: 100%;
+        width: 250px;
+        object-fit: contain;
+    }
+}
