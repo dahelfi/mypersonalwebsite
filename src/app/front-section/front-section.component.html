@@ -1,7 +1,7 @@
 <div class="main-container-frontsection-bigscreen" id="home">
 
     <div class="design-element-1"></div>
-    <div class="image-front-section">
+    <div *ngIf="showImage" class="image-front-section">
         <img src="./assets/img/{{ images[currentImage] }}">
     </div>
 
