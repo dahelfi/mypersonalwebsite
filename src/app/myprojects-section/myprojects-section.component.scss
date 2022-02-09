@@ -36,6 +36,7 @@
     background-color: white;
     margin: 5px;
     position: relative; /*relevant for project-overlay*/
+    text-align: center;
 
     img{
         object-fit: cover;
@@ -70,6 +71,7 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.1);
     color: white;
+    text-align: center;
   
     display: flex;
     flex-direction: column;
@@ -93,6 +95,7 @@
         border-radius: 5px;
         border: 1px solid #5221e6;
         margin-bottom: 50px !important;
+        text-align: center;
     }
   }
 
