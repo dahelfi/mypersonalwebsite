@@ -9,12 +9,12 @@
 
         <div class="navbar-links">
             <ul>
-                <li><a routerLink="/">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#mystory">MyStory</a></li>
-                <li><div style="background-color: #5221e6;">
-                    <a href="#contactMe">Contact Me</a></div></li>
+                <li><a (click)="toggle()"  href="#home">Home</a></li>
+                <li><a (click)="toggle()" href="#skills">Skills</a></li>
+                <li><a (click)="toggle()" href="#projects">Projects</a></li>
+                <li><a (click)="toggle()" href="#mystory">MyStory</a></li>
+                <li><div style="background-color: #5221e6; border-radius: 3px;">
+                    <a (click)="toggle()" href="#contactMe">Contact Me</a></div></li>
         
             </ul>
     
@@ -23,7 +23,7 @@
 
 
     
-    <a href="#" class="toggle-button">
+    <a (click)="toggle()" class="toggle-button">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>

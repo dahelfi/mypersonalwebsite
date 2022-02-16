@@ -1,4 +1,4 @@
-<div class="background-contact-section" id="contact">
+<div class="background-contact-section" id="contactMe">
     <h1>CONTACT ME</h1>
 
     <div style="display: flex; justify-content: center;">
@@ -7,30 +7,31 @@
             <h1 style="color: white; width: 30vw;">Lets work together</h1>
         </div>
         <div class="contact-section-input">
+            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <div class="input-element">
-                <span>name</span>
-                <textarea style="height: 40px;" name="name" id=""  rows="1" placeholder="Enter your name"></textarea>
+                <label for="name">Name</label>
+                <textarea  required [(ngModel)]="contact.name" name="name" #name="ngModel" style="height: 40px;" id="name"  rows="1" placeholder="Enter your name"></textarea>
             </div>
             
 
             <div class="input-element">
 
-                <span>email</span>
-                <textarea style="height: 40px;" name="email" id=""  rows="1" placeholder="Enter your email"></textarea>
+                <label for="email">Email</label>
+                <textarea required #email="ngModel" [(ngModel)]="contact.email" style="height: 40px;" name="email" id="mail"  rows="1" placeholder="Enter your email"></textarea>
 
             </div>
 
             
             <div class="input-element">
-                <span>message</span>
-                <textarea name="" id=""  rows="10" placeholder="Enter your message"></textarea>
+                <label for="message">Message</label>
+                <textarea [(ngModel)]="contact.message" required #message="ngModel" name="message" id="message"  rows="10" placeholder="Enter your message"></textarea>
 
             </div>
         
 
 
-            <button style="margin-top: 10px; margin-bottom: 30px; width: 200px; height: 40px; background-color: #5221e6; border: 1px solid #5221e6; color: white; border-radius: 5px; cursor: pointer;" >Absenden</button>
-
+            <button  [disabled]="!contactForm.form.valid" type="submit" style="margin-top: 10px; margin-bottom: 30px; width: 200px; height: 40px; background-color: #5221e6; border: 1px solid #5221e6; color: white; border-radius: 5px; cursor: pointer;">Absenden</button>
+        </form>
         </div>
 
     </div>

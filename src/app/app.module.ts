@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,10 @@ import { ContactSectionComponent } from './contact-section/contact-section.compo
 import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { SuccessComponentComponent } from './success-component/success-component.component';
+
+
 
 @NgModule({
   declarations: [
@@ -26,11 +31,15 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
     ContactSectionComponent,
     FooterComponent,
     ImprintComponent,
-    DataProtectionComponent
+    DataProtectionComponent,
+    SuccessComponentComponent,
+   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    FormsModule, 
+    HttpClientModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]

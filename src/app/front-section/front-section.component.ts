@@ -9,8 +9,8 @@ export class FrontSectionComponent implements OnInit {
 
 
   images = ['jumpingpicture.jpeg','pexels-pixabay-270366.jpg','IMG_0037.jpg'];
-  speaches = ['Im Daniel Helfenstein A Front End Developer','Coding is my passion','Graduated at Ostfalia University'];
-  speechesLittle = ['Challange me!','I love to create something new','already in my masters degree'];
+  speaches = ['I am Daniel Helfenstein A Front End Developer','Coding is my passion','Graduated at Ostfalia University'];
+  speechesLittle = ['Challange me!','I love to create something new','already in my business informatics masters degree'];
   currentImage = 0;
   showImage = true;
   constructor() { }
